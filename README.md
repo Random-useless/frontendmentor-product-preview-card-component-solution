@@ -12,12 +12,12 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](https://github.com/Random-useless/frontendmentor-product-preview-card-component-solution/blob/main/Screenshot.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution URL](https://github.com/Random-useless/frontendmentor-product-preview-card-component-solution)
+- Live Site URL: [live site URL](https://random-useless.github.io/frontendmentor-product-preview-card-component-solution/)
 
 ### Built with
 
@@ -32,4 +32,4 @@ I learned to display multiple images based on the user screen size using the pic
 
 ### Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Random-useless](https://www.frontendmentor.io/profile/Random-useless)
