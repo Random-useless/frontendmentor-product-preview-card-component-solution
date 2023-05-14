@@ -1,0 +1,166 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+  2. Remove default padding and margin.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Allow percentage-based heights in the application */
+html,
+body {
+  height: 100%;
+}
+
+/* 
+  1. Add accessible line-height
+  2. Add font-family
+*/
+body {
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Improve images defaults */
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+/* CSS Variables */
+
+:root {
+  /* Primary */
+
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Very-dark-cyan: hsl(158, 36%, 17%);
+  --Cream: hsl(30, 38%, 92%);
+
+  /* Neutral */
+
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: var(--Cream);
+}
+
+/* Card styles */
+
+.card {
+  background-color: var(--White);
+  border-radius: 12px;
+  margin: 2rem 1rem 0 1rem;
+}
+
+.card p {
+  font-size: 0.875rem;
+}
+
+.card-img {
+  border-radius: 12px 12px 0 0;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-subtitle {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-weight: normal;
+  color: var(--Dark-grayish-blue);
+  padding: 1em 0;
+}
+
+.card-title {
+  font-family: "Fraunces", serif;
+  line-height: 1;
+}
+
+.card-desc {
+  color: var(--Dark-grayish-blue);
+  padding: 1em 0;
+}
+
+.card-price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-price .price-bg {
+  font-family: "Fraunces", serif;
+  color: var(--Dark-cyan);
+  font-size: 2rem;
+}
+
+.card-price .price-sm {
+  color: var(--Dark-grayish-blue);
+  text-decoration: line-through;
+}
+
+.card-btn {
+  border: none;
+  background-color: var(--Dark-cyan);
+  color: var(--White);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 1em 0;
+  margin: 0.5rem 0;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+.card-btn:hover {
+  background-color: var(--Very-dark-cyan);
+}
+
+/* Media Queries */
+
+@media (min-width: 580px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    margin: 0;
+    display: flex;
+    max-width: 560px;
+  }
+  .card-img {
+    border-radius: 12px 0 0 12px;
+  }
+  .card-body {
+    max-width: 280px;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
+
+/* Attribution */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
